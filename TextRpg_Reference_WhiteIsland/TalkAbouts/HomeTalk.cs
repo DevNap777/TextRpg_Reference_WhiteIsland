@@ -27,7 +27,7 @@ namespace TextRpg_Reference_WhiteIsland.TalkAbouts
             Console.ReadLine();
             Console.Clear();
 
-            Console.WriteLine("??? : 야 \"아버지가방에들어간다!\" 빨리 안나올래!!??");
+            Console.WriteLine("??? : 야 \"나아암사아치이인!\" 빨리 안나올래!!??");
             Console.WriteLine();
         }
     }
