@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TextRpg_Reference_WhiteIsland
 {
-    public class TalkAbout
+    /// <summary>
+    /// 캐릭터들 간의 대화를 담을 부모 클래스 생성
+    /// 추상 클래스임. 자식 클래스에서 재정의
+    /// </summary>
+    public abstract class TalkAbout
     {
-        public void TalkInfrontHome()
-        {
-            Console.WriteLine("??? : 으... 피곤해...");
-            Console.WriteLine("??? : 오늘이 출발하는 날이지... 지금 몇시야..?");
-        }
+        public abstract void TalkHome();
     }
 }

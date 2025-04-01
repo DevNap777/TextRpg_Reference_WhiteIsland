@@ -74,5 +74,18 @@ namespace TextRpg_Reference_WhiteIsland
         {
             curScene = sceneDic[sceneName];
         }
+
+        public static void GameOver(string reasone)
+        {
+            Console.WriteLine("/////..././/././/////.//...///...////");
+            Console.WriteLine("..                                 //");
+            Console.WriteLine("//             YOU DIE             ..");
+            Console.WriteLine("..                                 //");
+            Console.WriteLine("/..//..././/././/..///.//...///...///");
+            Console.WriteLine();
+            Console.WriteLine(reasone);
+
+            gameOver = true;
+        }
     }
 }

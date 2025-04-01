@@ -19,7 +19,7 @@ namespace TextRpg_Reference_WhiteIsland.Scenes
         public override void ChoiceScene()
         {
             Console.WriteLine("1. Start Game");
-            Console.WriteLine("2. Load Game");
+            Console.WriteLine("2. Load Game[미구현]");
             Console.WriteLine("3. Exit");
         }
 
