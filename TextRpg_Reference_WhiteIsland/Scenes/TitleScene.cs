@@ -25,16 +25,22 @@ namespace TextRpg_Reference_WhiteIsland.Scenes
 
         public override void ResultScene()
         {
-            throw new NotImplementedException();
+            
         }
 
         public override void WaitScene()
         {
-            throw new NotImplementedException();
+            
         }
         public override void NextScene()
         {
-            throw new NotImplementedException();
+            switch (input)
+            {
+                /// TODO : 게임 시작 시, 집 앞 장면으로 이동
+                case ConsoleKey.D1:
+                    break;
+            }
+
         }
     }
 }

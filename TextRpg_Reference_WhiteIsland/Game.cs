@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TextRpg_Reference_WhiteIsland.Scenes;
 
 namespace TextRpg_Reference_WhiteIsland
 {
@@ -28,7 +29,10 @@ namespace TextRpg_Reference_WhiteIsland
         /// </summary>
         public static void Start()
         {
+            sceneDic = new Dictionary<string, Scene>();
+            sceneDic.Add("Title", new TitleScene());
 
+            curScene = sceneDic["Title"];
         }
 
         /// <summary>
@@ -55,6 +59,15 @@ namespace TextRpg_Reference_WhiteIsland
                 curScene.WaitScene();
                 curScene.NextScene();
             }
+        }
+
+        /// <summary>
+        /// sceneName을 통해 Scene 변경
+        /// </summary>
+        /// <param name="sceneName"></param>
+        public static void ChangeScene(string sceneName)
+        {
+            curScene = sceneDic[sceneName];
         }
     }
 }
