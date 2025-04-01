@@ -31,6 +31,7 @@ namespace TextRpg_Reference_WhiteIsland
         {
             sceneDic = new Dictionary<string, Scene>();
             sceneDic.Add("Title", new TitleScene());
+            sceneDic.Add("InfrontHome", new InfrontHomeScene());
 
             curScene = sceneDic["Title"];
         }
@@ -52,10 +53,14 @@ namespace TextRpg_Reference_WhiteIsland
             // 현재의 Scene을 계속 플레이하도록 해야 함.
             while (gameOver == false)
             {
+                Console.Clear();
                 curScene.RenderScene();
+                Console.WriteLine();
                 curScene.ChoiceScene();
                 curScene.InputScene();
+                Console.WriteLine();
                 curScene.ResultScene();
+                Console.WriteLine();
                 curScene.WaitScene();
                 curScene.NextScene();
             }

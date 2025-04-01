@@ -38,6 +38,7 @@ namespace TextRpg_Reference_WhiteIsland.Scenes
             {
                 /// TODO : 게임 시작 시, 집 앞 장면으로 이동
                 case ConsoleKey.D1:
+                    Game.ChangeScene("InfrontHome");
                     break;
             }
 
