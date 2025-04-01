@@ -3,32 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TextRpg_Reference_WhiteIsland.Scenes;
 
 namespace TextRpg_Reference_WhiteIsland.TalkAbouts
 {
-    public class HomeTalk : TalkAbout
+    public class InfrontHomeTalk
     {
-        
-        public override void TalkHome()
+        public void TalkInfrontHome()
         {
-            Utill.Print("19XX년 XX월 XX일...", ConsoleColor.DarkGray, 1000);
+            Utill.Print("끼익...", ConsoleColor.DarkGray, 1000);
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("          Enter...");
-            Console.ReadLine();
-            Console.Clear();
-
-            Console.WriteLine("??? : 으... 피곤해...");
-            Utill.Print("??? : 오늘이 출발하는 날이지... 지금 몇시야..?", ConsoleColor.White, 1000);
-            Console.WriteLine();
+            Console.WriteLine("아 \"OOO\"이잖아? 어쩐일이야?", ConsoleColor.DarkGray, 1000);
             Console.WriteLine();
             Console.WriteLine("                                     Enter...");
             Console.ReadLine();
             Console.Clear();
 
-            Console.WriteLine("??? : 야 아버지가방에들어간다! 빨리 안나올래!!??");
+            Console.WriteLine("OOO : 어쩐일이긴, @#$@#& 같은 !@$! 뒤질라고 빨리 안나올래? 출발해야한다고!!");
             Console.WriteLine();
+            Utill.Print("\"아버지가방에들어간다\" : 어... 그게....", ConsoleColor.White, 1000);
+            Console.WriteLine();
+            Console.WriteLine("                                     Enter...");
+            Console.ReadLine();
+            Console.Clear();
         }
     }
 }

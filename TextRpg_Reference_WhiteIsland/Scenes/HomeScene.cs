@@ -7,7 +7,7 @@ using TextRpg_Reference_WhiteIsland.TalkAbouts;
 
 namespace TextRpg_Reference_WhiteIsland.Scenes
 {
-    public class InfrontHomeScene : Scene
+    public class HomeScene : Scene
     {
         HomeTalk HomeTalk = new HomeTalk();
 
@@ -40,12 +40,18 @@ namespace TextRpg_Reference_WhiteIsland.Scenes
 
         public override void WaitScene()
         {
-            
+            Console.WriteLine("                        Enter...");
+            Console.ReadLine();
         }
 
         public override void NextScene()
         {
-            
+            switch (input)
+            {
+                case ConsoleKey.D1:
+                    Game.ChangeScene("InfrontHome");
+                    break;
+            }
         }
     }
 }

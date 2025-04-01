@@ -31,6 +31,7 @@ namespace TextRpg_Reference_WhiteIsland
         {
             sceneDic = new Dictionary<string, Scene>();
             sceneDic.Add("Title", new TitleScene());
+            sceneDic.Add("Home", new HomeScene());
             sceneDic.Add("InfrontHome", new InfrontHomeScene());
 
             curScene = sceneDic["Title"];
